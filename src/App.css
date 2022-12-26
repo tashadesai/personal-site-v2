@@ -51,8 +51,8 @@ body {
 
 .links {
   font-family: ParadisoB;
-  font-size: 1.8em;
   text-align: center;
+  padding-top: 14rem;
 }
 
 #resu {
@@ -87,25 +87,21 @@ body {
   background-image: url("../public/stickerflip.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 25%;
-  height: 25em;
+  height: 30em;
+  width: 130%;
   position: relative;
-  top: 20em;
-  left: -7em;
+  z-index: 1000;
 }
 
 
 .bubble {
-  --c: goldenrod;
-  font-size: 16px;
-  border: 0.3em solid black;
-  border-radius: 0.5em;
-  width: 12em;
-  height: 3em;
+  font-family: ParadisoB;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-align: center;
-  line-height: 3em;
+  line-height: 2em;
   position: relative;
   overflow: hidden;
   z-index: 1;
