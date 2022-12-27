@@ -6,25 +6,6 @@ import $ from 'jquery';
 
 class App extends React.Component {
     componentDidMount() {
-        const onhovered = anime({
-            targets: '.submit',
-            width: 200,
-            duration: 1500,
-            autoplay: false
-        });
-        const offhovered = anime({
-            targets: '.submit',
-            width: 64,
-            duration: 1500,
-            autoplay: false,
-        });
-
-        $("#submitButton").hover(
-            () => onhovered.play()
-        );
-        $("#submitButton").mouseleave(
-            () => offhovered.play()
-        );
 
         var card = document.querySelector("#sticker");
         var playing = false;
@@ -60,7 +41,9 @@ class App extends React.Component {
                 <div className="fr w-80">
                     <div id="aboutP1" className="">
                         a full stack software engineer based in New York city.<br/>
-                        Currently, I'm a software engineering manager at Innovid.
+                        Currently, I'm a software engineering manager at <a href={"https://www.innovid.com/"}
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer">Innovid</a>.
                     </div>
                 </div>
 
@@ -75,30 +58,43 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div className="links fr w-80">
-                    <div className="fl w-100 w-25-ns pa2">
-                        <div id="resu" className={"bubble"}>
-                            Resume
-                            <span></span><span></span><span></span><span></span>
+                    <a href={"../NatashaDesai2023.pdf"}
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <div className="fl w-100 w-25-ns pa2">
+                            <div id="resu" className={"bubble"}>
+                                Resume
+                                <span></span><span></span><span></span><span></span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="fl w-100 w-25-ns pa2">
-                        <div id="linke" className={"bubble"}>
-                            LinkedIn
-                            <span></span><span></span><span></span><span></span>
+                    </a>
+                    <a href={"https://www.linkedin.com/in/desainatasha/"}
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <div className="fl w-100 w-25-ns pa2">
+                            <div id="linke" className={"bubble"}>
+                                LinkedIn
+                                <span></span><span></span><span></span><span></span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="fl w-100 w-25-ns pa2">
-                        <div id="gith" className={"bubble"}>
-                            Github
-                            <span></span><span></span><span></span><span></span>
+                    </a>
+                    <a href={"https://github.com/tashadesai"}
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <div className="fl w-100 w-25-ns pa2">
+                            <div id="gith" className={"bubble"}>
+                                Github
+                                <span></span><span></span><span></span><span></span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="fl w-100 w-25-ns pa2">
-                        <div id="email" className={"bubble"}>
-                            Email
-                            <span></span><span></span><span></span><span></span>
+                    </a>
+                    <a href="mailto: tashadesai@gmail.com">
+                        <div className="fl w-100 w-25-ns pa2">
+                            <div id="email" className={"bubble"}>Email
+                                <span></span><span></span><span></span><span></span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
 

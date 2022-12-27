@@ -2,9 +2,14 @@ body {
   background-color: #171717;
 }
 .App {
-  color: #d3d3d3;
+  color: #ffffff;
   width: 100%;
   height: 100%
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @font-face {
@@ -26,12 +31,15 @@ body {
   src: url("../public/Paradiso Bold.ttf");
 }
 
+@font-face {
+  font-family: works;
+  src: url("../public/WorkSans-LightItalic.ttf");
+}
+
 
 #aboutP1 {
-  font-family: Helvetica;
-  font-style: italic;
+  font-family: works;
   font-size: 2em;
-  font-weight: lighter;
   text-align: center;
 }
 
@@ -113,7 +121,7 @@ body {
   position: absolute;
   width: 25%;
   height: 100%;
-  background-color: black;
+  background-color: #171717;
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 25%);
