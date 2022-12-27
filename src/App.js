@@ -47,7 +47,7 @@ class App extends React.Component {
                     </div>
                 </div>
 
-                <div className="fl w-20" style={{"padding-left": "-1rem"}}>
+                <div className="fl w-20" style={{"paddingLeft": "-1rem"}}>
                     <div id="sticker">
                         <div className="card">
                             <div className="front">

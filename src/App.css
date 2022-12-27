@@ -13,19 +13,10 @@ a{
 }
 
 @font-face {
-  font-family: Jaque;
-  src: url("../public/Jaque.ttf");
-}
-
-@font-face {
   font-family: Neuva;
   src: url("../public/Neuva.ttf");
 }
 
-@font-face {
-  font-family: Paradiso;
-  src: url("../public/Paradiso.ttf");
-}
 @font-face {
   font-family: ParadisoB;
   src: url("../public/Paradiso Bold.ttf");
@@ -92,7 +83,7 @@ a{
 }
 
 #sticker {
-  background-image: url("../public/stickerflip.png");
+  background-image: url("../public/stickerflipsmall.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 30em;
