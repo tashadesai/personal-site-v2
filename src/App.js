@@ -38,8 +38,8 @@ class App extends React.Component {
                 <div id="name" className="intro fr w-100">
                     Natasha Desai
                 </div>
-                <div className="fr w-80">
-                    <div id="aboutP1" className="">
+                <div id="aboutP1" className="fr w-70">
+                    <div className="">
                         a full stack software engineer based in New York city.<br/>
                         Currently, I'm a software engineering manager at <a href={"https://www.innovid.com/"}
                                                                             target="_blank"
