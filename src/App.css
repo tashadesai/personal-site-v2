@@ -1,13 +1,19 @@
 body {
-  background-color: #171717;
+  /* background-color: #171717; */
+  background-color: #07030d;
+  background-image: url("../public/jakob-braun-NpeFMd8FseU-unsplash.jpg");
+  background-size: cover;
+  background-blend-mode: color-dodge;
+
 }
+
 .App {
   color: #ffffff;
   width: 100%;
   height: 100%
 }
 
-a{
+a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -18,20 +24,34 @@ a{
 }
 
 @font-face {
+  font-family: neon;
+  src: url("../public/NeoncityScript-K77Je.otf");
+}
+
+@font-face {
   font-family: ParadisoB;
   src: url("../public/Paradiso Bold.ttf");
 }
 
-@font-face {
-  font-family: works;
-  src: url("../public/WorkSans-LightItalic.ttf");
-}
-
 
 #aboutP1 {
-  font-family: works;
-  font-size: 2em;
+  color: #eaeaeae5;
+  font-family: "Comfortaa";
+  font-size: 1.4em;
   text-align: center;
+  max-width: 29em;
+}
+
+.aboutborder {
+  border: 0.1em solid #c7d5ff;
+  border-radius: 3em;
+  max-width: 24em;
+  box-shadow: 0 0 .2rem #c7d5ff,
+    0 0 .2rem #c7d5ff,
+    0 0 2rem #1386fe,
+    0 0 0.8rem #1386fe,
+    0 0 2.8rem #1386fe,
+    inset 0 0 1.3rem #1386fe;
 }
 
 .intro {
@@ -45,41 +65,189 @@ a{
 
 #name {
   color: #a09ae7;
-  text-align: end;
+  text-align: center;
+  font-family: 'Sacramento', sans-serif;
+  font-size: 14em;
+  font-weight: 400;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+
+#firstn {
+  animation: turnon 3s;
+}
+
+@keyframes turnon {
+
+  0%,
+  5% {
+    opacity: 10%;
+    text-shadow: none;
+  }
+
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    opacity: 100%;
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  }
+
+  20%,
+  24%,
+  55% {
+    opacity: 10%;
+    text-shadow: none;
+  }
+}
+
+#lastn {
+  animation: turnon2 1.5s;
+}
+
+@keyframes turnon2 {
+
+  0%,
+  5% {
+    opacity: 10%;
+    text-shadow: none;
+  }
+
+  15%,
+  79%,
+  84%,
+  100% {
+    opacity: 100%;
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  }
+
+
+  81% {
+    opacity: 10%;
+    text-shadow: none;
+  }
+}
+
+@keyframes pulsate {
+
+  100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+
+  }
+
+  0% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #f09,
+      0 0 73px #f09,
+      0 0 80px #f09,
+      0 0 94px #f09,
+      0 0 140px #f09;
+
+  }
+
 }
 
 .links {
   font-family: ParadisoB;
+  font-size: 1.3em;
   text-align: center;
-  padding-top: 14rem;
+  border: 0.2em solid #e5b0ff;
+  border-radius: 15px;
+  padding: 0.6em;
+  box-shadow: 0 0 .2rem #e5b0ff,
+    0 0 .2rem #e5b0ff,
+    0 0 1.5rem #bc13fe,
+    0 0 0.5rem #bc13fe,
+    0 0 2.5rem #bc13fe,
+    inset 0 0 1.1rem #bc13fe;
+
 }
 
-#resu {
-  color: black;
-  background-color: #aad8d7;
-  border: 0.3em solid #aad8d7;
-  border-radius: 0.5em;
+.bubble {
+  color: #a9a9a9;
 }
 
-#linke {
-  color: black;
-  background-color: #fffde1;
-  border: 0.3em solid #fffde1;
-  border-radius: 0.5em;
+.bubble:hover {
+  color: white;
+  /* text-shadow: 
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #bc13fe,
+  0 0 82px #bc13fe,
+  0 0 92px #bc13fe,
+  0 0 102px #bc13fe,
+  0 0 151px #bc13fe; */
+
 }
 
-#gith {
-  color: black;
-  background-color: #ebfac4;
-  border: 0.3em solid #ebfac4;
-  border-radius: 0.5em;
-}
+@keyframes drop {
+  0% {
+    transform: translateY(-200px) scaleY(0.9);
+    opacity: 0;
+  }
 
-#email {
-  color: black;
-  background-color: #f7cdcc;
-  border: 0.3em solid #f7cdcc;
-  border-radius: 0.5em;
+  5% {
+    opacity: .7;
+  }
+
+  50% {
+    transform: translateY(0px) scaleY(1);
+    opacity: 1;
+  }
+
+  65% {
+    transform: translateY(-17px) scaleY(.9);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(-22px) scaleY(.9);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px) scaleY(1);
+    opacity: 1;
+  }
 }
 
 #sticker {
@@ -93,93 +261,53 @@ a{
 }
 
 
-.bubble {
-  font-family: ParadisoB;
-  text-align: center;
-  font-size: 20px;
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  line-height: 2em;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-  margin: 1em;
+
+@keyframes swing {
+  0% {
+    transform: rotate(-1deg)
+  }
+
+  100% {
+    transform: rotate(1deg)
+  }
 }
 
-.bubble span {
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  background-color: #171717;
-  transform: translateY(150%);
-  border-radius: 50%;
-  left: calc((var(--n) - 1) * 25%);
-  transition: 0.5s;
-  transition-delay: calc((var(--n) - 1) * 0.1s);
-  z-index: -1;
-}
-
-#resu.bubble:hover {
-  color: #aad8d7;
-}
-#gith.bubble:hover {
-  color: #ebfac4;
-}
-#linke.bubble:hover {
-  color: #fffde1;
-}
-#email.bubble:hover {
-  color: #f7cdcc;
-}
-
-.bubble:hover span {
-  transform: translateY(0) scale(2);
-}
-
-.bubble span:nth-child(1) {
-  --n: 1;
-}
-
-.bubble span:nth-child(2) {
-  --n: 2;
-}
-
-.bubble span:nth-child(3) {
-  --n: 3;
-}
-
-.bubble span:nth-child(4) {
-  --n: 4;
-}
 
 @media only screen and (max-width: 600px) {
   .intro {
     font-size: 5em;
     padding: 1rem;
   }
+
   #hi {
     height: 5rem;
   }
+
   #aboutP1 {
     width: 100%;
     font-size: 1.4em;
     text-align: start;
     padding: 1rem;
+    font-family: ParadisoB;
   }
+
   .links {
     padding-top: 0;
     width: 100%;
     position: fixed;
     bottom: 2px;
+    font-family: ParadisoB;
+    text-align: center;
   }
+
   .bubble {
     margin: 0em;
   }
+
   #sticker {
     display: none;
   }
+
   .pa2 {
     padding: 0.1rem;
   }
