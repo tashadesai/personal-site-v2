@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
-import anime from "animejs";
-import $ from 'jquery';
+// import anime from "animejs";
+// import $ from 'jquery';
 
 
 class App extends React.Component {
@@ -44,7 +44,60 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div> */}
-                <div className="links fr w-100">
+                <div id="hammenu">
+                    <input type="checkbox" id="burger-click"></input>
+                    <label id="burger" for="burger-click">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="close-button"><span>x</span></div>
+
+                    </label>
+                    <nav id="sidebar">
+                        <div className="links fr w-100">
+                            <a href={"../NatashaDesai2023.pdf"}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <div className="fl w-100 w-25-ns pa3">
+                                    <div id="resu" className={"bubble"}>
+                                        Resume
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href={"https://www.linkedin.com/in/desainatasha/"}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <div className="fl w-100 w-25-ns pa3">
+                                    <div id="linke" className={"bubble"}>
+                                        LinkedIn
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href={"https://github.com/tashadesai"}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <div className="fl w-100 w-25-ns pa3">
+                                    <div id="gith" className={"bubble"}>
+                                        Github
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="mailto: tashadesai@gmail.com">
+                                <div className="fl w-100 w-25-ns pa3">
+                                    <div id="email" className={"bubble"}>Email
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </nav>
+                </div>
+
+                <div id="desktoplinks" className="links fr w-100">
                     <a href={"../NatashaDesai2023.pdf"}
                         target="_blank"
                         rel="noopener noreferrer">
