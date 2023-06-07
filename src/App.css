@@ -1,9 +1,9 @@
 body {
   /* background-color: #171717; */
   background-color: #07030d;
-  background-image: url("../public/jakob-braun-NpeFMd8FseU-unsplash.jpg");
+  background-image: url("../public/purplewall.png");
   background-size: cover;
-  background-blend-mode: color-dodge;
+  /* background-blend-mode: color-dodge; */
 
 }
 
